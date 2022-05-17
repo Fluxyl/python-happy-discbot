@@ -3,6 +3,7 @@ import os
 import requests
 import json
 
+# An example project to showcase my skill utilizing a bot from Discord.
 # Tricky env import for VSC
 from dotenv import load_dotenv
 
@@ -34,6 +35,7 @@ async def on_message(message):
     if message.author == client.user:
         return
     
+
     if message.content.lower() == "!hello":
         await message.channel.send('Hello {}!'.format(message.author.name))
 
